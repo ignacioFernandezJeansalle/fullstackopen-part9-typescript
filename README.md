@@ -10,7 +10,7 @@ En esta parte, utilizamos las herramientas introducidas anteriormente para crear
 
 ### Ejercicios
 
-- [ ] 9.1 => b: Primeros pasos con TypeScript
+- [x] 9.1 => b: Primeros pasos con TypeScript
 - [ ] 9.2 => b: Primeros pasos con TypeScript
 - [ ] 9.3 => b: Primeros pasos con TypeScript
 - [ ] 9.4 => b: Primeros pasos con TypeScript
