@@ -10,7 +10,8 @@
     "calculate": "ts-node calculator.ts",
     "bmi": "ts-node ./exercises/bmiCalculator.ts",
     "calculateExercises": "ts-node ./exercises/exerciseCalculator.ts",
-    "start": "ts-node index.ts"
+    "start": "ts-node index.ts",
+    "dev": "ts-node-dev index.ts"
   },
   "author": "Ignacio Fernández Jeansalle",
   "license": "ISC",
