@@ -13,7 +13,7 @@ En esta parte, utilizamos las herramientas introducidas anteriormente para crear
 - [x] 9.1 => b: Primeros pasos con TypeScript
 - [x] 9.2 => b: Primeros pasos con TypeScript
 - [x] 9.3 => b: Primeros pasos con TypeScript
-- [ ] 9.4 => b: Primeros pasos con TypeScript
+- [x] 9.4 => b: Primeros pasos con TypeScript
 - [ ] 9.5 => b: Primeros pasos con TypeScript
 - [ ] 9.6 => b: Primeros pasos con TypeScript
 - [ ] 9.7 => b: Primeros pasos con TypeScript
