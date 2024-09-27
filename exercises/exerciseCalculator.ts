@@ -1,3 +1,24 @@
+interface exercisesValues {
+  hoursByDay: number[];
+  targetHoursByDay: number;
+}
+
+const parseExercisesValues = (args: string[]): exercisesValues => {
+  if (args.length < 4) throw new Error("Not enough arguments");
+
+  const targetHoursByDay = Number(args[2]);
+  const hoursByDay = [...args].slice(3).map((el) => Number(el));
+
+  if (!isNaN(targetHoursByDay) && hoursByDay.every((el) => !isNaN(el))) {
+    return {
+      hoursByDay,
+      targetHoursByDay,
+    };
+  } else {
+    throw new Error("Provided values were not numbres!");
+  }
+};
+
 interface Result {
   periodLength: number;
   trainingDays: number;
@@ -46,7 +67,8 @@ const calculateExercises = (hoursByDay: number[], targetHoursByDay: number): Res
 };
 
 try {
-  console.log(calculateExercises([3, 0, 2, 4.5, 0, 3, 1], 2));
+  const { hoursByDay, targetHoursByDay } = parseExercisesValues(process.argv);
+  console.log(calculateExercises(hoursByDay, targetHoursByDay));
 } catch (error: unknown) {
   let errorMessage = "Something went wrong: ";
   if (error instanceof Error) {
