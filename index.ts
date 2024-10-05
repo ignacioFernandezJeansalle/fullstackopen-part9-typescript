@@ -1,7 +1,9 @@
 import express from "express";
 import calculateBmi from "./src/utils/bmiCalculator";
+import { exerciseInput, exerciseResult, calculateExercises } from "./src/utils/exerciseCalculator";
 
 const app = express();
+app.use(express.json());
 
 app.get("/hello", (_req, res) => {
   res.send("Hello Full Stack!");
@@ -27,6 +29,19 @@ app.get("/bmi", (req, res) => {
     height,
     bmi,
   });
+});
+
+app.post("/exercises", (req, res) => {
+  const reqBody: exerciseInput = req.body;
+
+  const result: exerciseResult = calculateExercises(reqBody);
+
+  if (!result.success) {
+    res.json({ error: result.message });
+    return;
+  }
+
+  res.json(result.result);
 });
 
 const PORT = 3003;
