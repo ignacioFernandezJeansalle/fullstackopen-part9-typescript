@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-inline: 16px;
+}
+
+header,
+main,
+footer {
+  padding-block: 16px;
+}
+
+article {
+  margin-bottom: 16px;
+}
