@@ -17,12 +17,18 @@ En esta parte, utilizamos las herramientas introducidas anteriormente para crear
 - [x] 9.5 => b: Primeros pasos con TypeScript
 - [x] 9.6 => b: Primeros pasos con TypeScript
 - [x] 9.7 => b: Primeros pasos con TypeScript
+
+[./patientor](https://github.com/ignacioFernandezJeansalle/fullstackopen-part9-typescript/tree/main/patientor)
+
 - [x] 9.8 => c: Tipando una aplicación Express
 - [x] 9.9 => c: Tipando una aplicación Express
 - [x] 9.10 => c: Tipando una aplicación Express
 - [x] 9.11 => c: Tipando una aplicación Express
 - [x] 9.12 => c: Tipando una aplicación Express
 - [x] 9.13 => c: Tipando una aplicación Express
+
+[./courseinfo](https://github.com/ignacioFernandezJeansalle/fullstackopen-part9-typescript/tree/main/courseinfo)
+
 - [ ] 9.14 => d: React con tipos
 - [ ] 9.15 => d: React con tipos
 - [ ] 9.16 => d: React con tipos
