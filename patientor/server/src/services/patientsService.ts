@@ -18,7 +18,7 @@ const getNonSensitiveEntries = (): NonSensitivePatient[] => {
   }));
 };
 
-const addEntry = (entry: NewPatient): Patient => {
+const addPatient = (entry: NewPatient): Patient => {
   const id = uuidv4() as string;
 
   const newPatient = {
@@ -34,5 +34,5 @@ const addEntry = (entry: NewPatient): Patient => {
 export default {
   getEntries,
   getNonSensitiveEntries,
-  addEntry,
+  addPatient,
 };
