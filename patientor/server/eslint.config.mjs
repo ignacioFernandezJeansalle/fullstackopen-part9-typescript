@@ -35,6 +35,7 @@ export default [
           ignoreRestSiblings: true,
         },
       ],
+      "@typescript-eslint/no-unsafe-assignment": "error",
     },
   },
 ];
