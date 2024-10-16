@@ -1,0 +1,20 @@
+### GET ping
+GET http://localhost:3001/api/ping
+
+### GET diagnoses
+GET http://localhost:3001/api/diagnoses
+
+### GET patients
+GET http://localhost:3001/api/patients
+
+### 
+POST http://localhost:3001/api/patients HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Ignacio Fernández Jeansalle",
+  "dateOfBirth": "1985-03-14",
+  "ssn": "140385-666X",
+  "gender": "male",
+  "occupation": "Developer"
+}

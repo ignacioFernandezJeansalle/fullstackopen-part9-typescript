@@ -21,7 +21,7 @@ En esta parte, utilizamos las herramientas introducidas anteriormente para crear
 - [x] 9.9 => c: Tipando una aplicación Express
 - [x] 9.10 => c: Tipando una aplicación Express
 - [x] 9.11 => c: Tipando una aplicación Express
-- [ ] 9.12 => c: Tipando una aplicación Express
+- [x] 9.12 => c: Tipando una aplicación Express
 - [ ] 9.13 => c: Tipando una aplicación Express
 - [ ] 9.14 => d: React con tipos
 - [ ] 9.15 => d: React con tipos
