@@ -1,7 +1,34 @@
-export type CoursePart = {
+import Part from "./Part";
+
+interface CoursePartBase {
   name: string;
   exerciseCount: number;
-};
+}
+
+interface CoursePartBaseWithDescription extends CoursePartBase {
+  description: string;
+}
+
+interface CoursePartBasic extends CoursePartBaseWithDescription {
+  kind: "basic";
+}
+
+interface CoursePartGroup extends CoursePartBase {
+  groupProjectCount: number;
+  kind: "group";
+}
+
+interface CoursePartBackground extends CoursePartBaseWithDescription {
+  backgroundMaterial: string;
+  kind: "background";
+}
+
+interface CoursePartSpecial extends CoursePartBaseWithDescription {
+  requirements: string[];
+  kind: "special";
+}
+
+export type CoursePart = CoursePartBasic | CoursePartGroup | CoursePartBackground | CoursePartSpecial;
 
 interface ContentProps {
   courseParts: CoursePart[];
@@ -11,13 +38,11 @@ const Content = (props: ContentProps) => {
   const { courseParts } = props;
 
   return (
-    <div>
+    <main>
       {courseParts.map((c, index) => (
-        <p key={index}>
-          {c.name} {c.exerciseCount}
-        </p>
+        <Part key={index} {...c} />
       ))}
-    </div>
+    </main>
   );
 };
 
