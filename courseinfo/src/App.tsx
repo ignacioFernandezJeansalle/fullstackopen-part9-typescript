@@ -1,6 +1,11 @@
+import Header from "./components/Header";
+import Content from "./components/Content";
+import { CoursePart } from "./components/Content";
+import Total from "./components/Total";
+
 const App = () => {
   const courseName = "Half Stack application development";
-  const courseParts = [
+  const courseParts: CoursePart[] = [
     {
       name: "Fundamentals",
       exerciseCount: 10,
@@ -14,22 +19,13 @@ const App = () => {
       exerciseCount: 14,
     },
   ];
-
   const totalExercises = courseParts.reduce((sum, part) => sum + part.exerciseCount, 0);
 
   return (
     <div>
-      <h1>{courseName}</h1>
-      <p>
-        {courseParts[0].name} {courseParts[0].exerciseCount}
-      </p>
-      <p>
-        {courseParts[1].name} {courseParts[1].exerciseCount}
-      </p>
-      <p>
-        {courseParts[2].name} {courseParts[2].exerciseCount}
-      </p>
-      <p>Number of exercises {totalExercises}</p>
+      <Header name={courseName} />
+      <Content courseParts={courseParts} />
+      <Total total={totalExercises} />
     </div>
   );
 };

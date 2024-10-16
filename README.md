@@ -29,7 +29,7 @@ En esta parte, utilizamos las herramientas introducidas anteriormente para crear
 
 [./courseinfo](https://github.com/ignacioFernandezJeansalle/fullstackopen-part9-typescript/tree/main/courseinfo)
 
-- [ ] 9.14 => d: React con tipos
+- [x] 9.14 => d: React con tipos
 - [ ] 9.15 => d: React con tipos
 - [ ] 9.16 => d: React con tipos
 - [ ] 9.17 => d: React con tipos
