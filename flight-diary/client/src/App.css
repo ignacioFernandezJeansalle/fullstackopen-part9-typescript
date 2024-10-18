@@ -17,6 +17,19 @@ section {
   padding: var(--padding);
 }
 
+form {
+  padding-block: 16px;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  row-gap: 8px;
+}
+
+button {
+  padding: 4px 16px;
+  max-width: min-content;
+}
+
 ul {
   /* list-style: none; */
   padding: var(--padding);
