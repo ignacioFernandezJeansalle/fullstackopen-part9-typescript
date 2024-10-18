@@ -1,9 +1,27 @@
+:root {
+  --padding: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  padding: 16px;
+header {
+  background: #ccc;
+  padding: var(--padding);
+}
+
+section {
+  padding: var(--padding);
+}
+
+ul {
+  /* list-style: none; */
+  padding: var(--padding);
+}
+
+li {
+  padding-block: 4px;
 }
