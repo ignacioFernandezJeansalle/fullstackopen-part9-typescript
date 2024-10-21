@@ -37,7 +37,7 @@ En esta parte, utilizamos las herramientas introducidas anteriormente para crear
 - [x] 9.16 => d: React con tipos
 - [x] 9.17 => d: React con tipos
 - [x] 9.18 => d: React con tipos
-- [ ] 9.19 => d: React con tipos
+- [x] 9.19 => d: React con tipos
 - [ ] 9.20 => e: Grande finale: Patientor
 - [ ] 9.21 => e: Grande finale: Patientor
 - [ ] 9.22 => e: Grande finale: Patientor
