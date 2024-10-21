@@ -2,6 +2,7 @@ import { useState } from "react";
 import { newDiary } from "../types";
 
 interface AddNewEntryFormProps {
+  message: string;
   addNewEntry: (object: newDiary) => void;
 }
 
@@ -32,6 +33,8 @@ const AddNewEntryForm = (props: AddNewEntryFormProps) => {
   return (
     <section>
       <h2>Add new entry</h2>
+      {props.message && <p style={{ color: "red" }}>{props.message}</p>}
+
       <form onSubmit={submit}>
         <label>
           Date: <input type="text" value={inputDate} onChange={(event) => setInputDate(event.target.value)} />
