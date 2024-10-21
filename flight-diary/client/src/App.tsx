@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { useEffect, useState } from "react";
-import { Diary, newDiary } from "./types";
+import { Diary, NewDiary } from "./types";
 import axios from "axios";
 import diaryService from "./services/diaryService";
 
@@ -17,7 +17,7 @@ function App() {
     diaryService.getDiaries().then((data) => setDiaries(data));
   }, []);
 
-  const addNewEntry = (object: newDiary) => {
+  const addNewEntry = (object: NewDiary) => {
     diaryService
       .createDiary(object)
       .then((data) => setDiaries(diaries.concat(data)))
