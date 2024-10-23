@@ -1,11 +1,19 @@
 import { Box, Typography } from "@mui/material";
-import { Patient } from "../../types";
+import { Diagnosis, Patient } from "../../types";
 
 interface Props {
   patient: Patient;
+  diagnoses: Diagnosis[];
 }
 
-const Entries = ({ patient }: Props) => {
+const Entries = ({ patient, diagnoses }: Props) => {
+  const getDiagnosisNameBy = (code: string): string => {
+    const diagnosis = diagnoses.find((d) => d.code === code);
+    if (!diagnosis) return "No result...";
+
+    return diagnosis.name;
+  };
+
   return (
     <Box>
       <Typography variant="h5" marginBlock="8px">
@@ -21,11 +29,15 @@ const Entries = ({ patient }: Props) => {
               <p>
                 {entry.date} - {entry.description}
               </p>
-              <ul>
-                {entry.diagnosisCodes?.map((d) => (
-                  <li key={d}>{d}</li>
-                ))}
-              </ul>
+              {entry.diagnosisCodes && (
+                <ul>
+                  {entry.diagnosisCodes.map((diagnosisCode) => (
+                    <li key={diagnosisCode}>
+                      {diagnosisCode} - {getDiagnosisNameBy(diagnosisCode)}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </Box>
           ))}
         </>
