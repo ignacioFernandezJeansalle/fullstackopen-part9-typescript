@@ -43,7 +43,7 @@ En esta parte, utilizamos las herramientas introducidas anteriormente para crear
 
 - [x] 9.20 => e: Grande finale: Patientor
 - [x] 9.21 => e: Grande finale: Patientor
-- [ ] 9.22 => e: Grande finale: Patientor
+- [x] 9.22 => e: Grande finale: Patientor
 - [ ] 9.23 => e: Grande finale: Patientor
 - [ ] 9.24 => e: Grande finale: Patientor
 - [ ] 9.25 => e: Grande finale: Patientor
